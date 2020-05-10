@@ -1,0 +1,27 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    // google dependencies
+    implementation 'com.google.guava:guava:28.1-jre'
+
+    // easyrules
+    implementation 'org.jeasy:easy-rules-support:3.4.0'
+    implementation 'org.jeasy:easy-rules-mvel:3.4.0'
+    implementation 'org.jeasy:easy-rules-core:3.4.0'
+
+    // JUnit dependencies
+    testImplementation 'junit:junit:4.12'
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'com.sriwin.test.CreditScoreTest'
+}
